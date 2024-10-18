@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}   
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.close{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+.heading h1 i{
+    color: grey;
+}
+main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 10px 10px 8px #a3a3a3;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+@media screen and (max-width:583px) {
+    .container{
+        width: 300px;
+        height: 400px;
+    }
+    .input-boxes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:807px) {
+    .hamburger{
+        display: block;
+    }
+    .links{
+        position: absolute;
+        left: -120%;
+        top: 0px;
+        height: 100vh;
+        width: 50%;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px 10px rgb(202, 202, 202);
+        transition: 0.5s ease-in-out;
+    }
+    .links.active{
+        left: 0px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 40px;
+        padding: 0px;
+    }
+    .nav-links li{
+        margin-top: 40px;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .close i{
+        font-size: 1.5rem;
+    }
+}
+.input-boxes input{
+    padding: 12px 12px 12px 18px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(239, 239, 239);
+    margin: 10px;
+}
+.button button{
+    padding: 15px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: rgb(227, 148, 0);
+}

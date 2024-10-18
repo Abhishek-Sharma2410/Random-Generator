@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password | Javascript Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="heading">
+                    <h1><i class="ri-lock-unlock-line"></i> Random Password.</h1>
+                </div>
+                <div class="links">
+                    <ul class="nav-links">
+                        <li><a href="/Projects/Counter App/index.html"><i class="ri-calculator-line"></i> Counter App</a></li>
+                        <li><a href="/Projects/Hamburger/index.html"></a><i class="ri-flower-fill"></i> Hamburger Tutorial</li>
+                        <li><a href="https://github.com/Abhishek-Sharma2410?tab=repositories"><i class="ri-github-fill"></i> Github</a></li>
+                    </ul>
+                    <div class="close">
+                        <i class="ri-close-line" id="close"></i>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <i class="ri-apps-line" id="hamburger"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="heading">
+                <h2><i class="ri-sort-number-asc"></i> Enter Digits</h2>
+            </div>
+            <div class="input-boxes">
+                <input type="text" id="length" placeholder="Enter length">
+                <input type="text" id="inpla" placeholder="Your Password" readonly>
+            </div>
+            <div class="button">
+                <button id="button">Generate Password</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
